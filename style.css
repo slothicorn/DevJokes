@@ -23,9 +23,9 @@ body {
 }
 
 .container {
-  width: 100%;
+  width: 50rem;
   aspect-ratio: 1/1;
-  max-width: min(90vw, 90vh, 50rem);
+  max-width: min(90vw, 90vh);
   background-color: #343658;
   border-radius: 1rem;
   display: grid;
