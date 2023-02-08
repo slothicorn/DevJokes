@@ -23,8 +23,9 @@ body {
 }
 
 .container {
-  width: 40vw;
-  height: 40vw;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  max-width: min(90vw, 90vh);
   background-color: #343658;
   border-radius: 1rem;
   display: grid;
@@ -32,11 +33,6 @@ body {
   place-items: center;
   text-align: center;
   padding: 1rem;
-
-  @media (max-width: 700px) {
-    width: 80vw;
-    height: 80vw;
-  }
 }
 
 h3 {
@@ -68,10 +64,10 @@ h3 {
 
 .btn {
   font-family: inherit;
-  font-size: inherit;
+  font-size: clamp(1.5rem, 2vw, 2rem);
   font-weight: 700;
   text-transform: uppercase;
-  padding: 2rem 3rem;
+  padding: 1em 2em;
   border-radius: 999px;
   border: none;
   position: relative;
