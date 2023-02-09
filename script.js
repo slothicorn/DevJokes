@@ -21,9 +21,9 @@ const newJoke = () => {
   fetch("https://backend-omega-seven.vercel.app/api/getjoke")
     .then((response) => response.json())
     .then((data) => {
-      joke.innerText = `${data[0].question}
+      joke.innerText = `"${data[0].question}"
 
-        ${data[0].punchline}`;
+        "${data[0].punchline}"`;
     })
     .catch((error) => {
       console.log(`error: ${error}`);
